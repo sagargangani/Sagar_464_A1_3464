@@ -29,6 +29,7 @@ public class Main {
             t.setType();
             System.out.println(t.getType());
             System.out.println(t.getPerimeter());
+            System.out.println(t.getArea());
         }
     }
 }
