@@ -30,6 +30,20 @@ public class Main {
             System.out.println(t.getType());
             System.out.println(t.getPerimeter());
             System.out.println(t.getArea());
+            System.out.println("Enter the point to check");
+            System.out.println("Enter the value for x");
+            int x=sc.nextInt();
+            System.out.println("Enter the value for y");
+            int y=sc.nextInt();
+            Point p=new Point(x,y);
+            Boolean b=t.insideOrOutside(p);
+            if(b){
+                System.out.println("The point is inside");
+            }
+            else{
+
+                System.out.println("The point is outside");
+            }
         }
     }
 }
