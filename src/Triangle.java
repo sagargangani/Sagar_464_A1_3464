@@ -53,12 +53,12 @@ public class Triangle {
     }
 
     public boolean insideOrOutside(Point p) {
-        double areaABC = getArea();
-        double areaPBC = calculateTriangleArea(p, p2, p3);
-        double areaPCA = calculateTriangleArea(p1, p, p3);
-        double areaPAB = calculateTriangleArea(p1, p2, p);
+        double area = getArea();
+        double area1 = calculateTriangleArea(p, p2, p3);
+        double area2 = calculateTriangleArea(p1, p, p3);
+        double area3= calculateTriangleArea(p1, p2, p);
 
-        return areaABC == areaPBC + areaPCA + areaPAB;
+        return area == area1 + area2 + area3;
     }
 
     private double calculateTriangleArea(Point p1, Point p2, Point p3) {
